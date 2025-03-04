@@ -43,3 +43,28 @@ def move_file():
 @app.post("/copyfile")
 def copy_file():
     pass
+
+@app.post("renamefile")
+def reanem_file():
+    pass
+
+@app.get("/DownloadFile")
+def download_file():
+    pass
+
+@app.delete("/DeleteFile")
+def delete_file():
+    pass
+
+@app.post("/CreateFolder")
+def create_folder():
+    pass
+
+@app.post("/sharefile")
+def share_file():
+    pass
+
+@app.put("/sharepermissions")
+def share_permissions():
+    pass
+
