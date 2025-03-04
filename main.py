@@ -67,4 +67,15 @@ def share_file():
 @app.put("/sharepermissions")
 def share_permissions():
     pass
+@app.get("/fileverison")
+def file_verison():
+    pass
+
+@app.post("/revertFileVersion")
+def revert_file_version():
+    pass
+
+@app.get("/searchfile")
+def search_file():
+    pass
 
