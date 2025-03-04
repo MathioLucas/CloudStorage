@@ -30,3 +30,19 @@ class Folder(BaseModel):
     id: int
     folder_name: str
     date_created: datetime = datetime.now()
+
+class file_version(BaseModel):
+    id: int
+    file_id: int
+    version_number: int
+    file_name: str
+    file_type: str
+    created_at: datetime = datetime.now()
+    
+class share(BaseModel):
+    id: int
+    file_id: Optional[int] = None
+    folder_id: Optional[int] = None
+    share_name: str
+    share_link: str
+    permissions: str = "read"
